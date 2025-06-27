@@ -103,7 +103,7 @@ const Checkout: React.FC<CheckoutProps> = ({ cart,  }) => {
       tipoEnvio: "TAKEAWAY"
     };
 
-    const response = await fetch('http://localhost:8080/api/pagos/prueba-pago', {
+    const response = await fetch('https://back-buensabor.onrender.com/api/pagos/prueba-pago', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

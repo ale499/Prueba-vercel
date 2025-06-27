@@ -50,7 +50,7 @@ export interface Producto {
 export const apiService = {
   // Fetch all products
   async getProductos(): Promise<Producto[]> {
-    const response = await fetch('http://localhost:8080/articuloManufacturadoDetalle/todos', {
+    const response = await fetch('https://back-buensabor.onrender.com/articuloManufacturadoDetalle/todos', {
       headers: {
         'Authorization': `Bearer ${import.meta.env.VITE_API_BEARER}`
       }
@@ -70,7 +70,7 @@ export const apiService = {
 
   // Fetch all categories with subcategories
   async getCategorias(): Promise<Categoria[]> {
-     const response = await fetch('http://localhost:8080/categoria/listar', {
+     const response = await fetch('https://back-buensabor.onrender.com/categoria/listar', {
       headers: {
         'Authorization': `Bearer ${import.meta.env.VITE_API_BEARER}`
       }
